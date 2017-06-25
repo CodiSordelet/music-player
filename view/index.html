@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+	<div data-role="page" class="ui-page ui-page-theme-b">
+		<div class="container">
+
+
+			<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+
+				<h1 class="ui-title" role="heading" aria-level="1">Music Player</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<div class="ui-grid-solo" id="image-container">
+					<img class="ui-block-a" id="album-cover" alt="album cover">
+				</div>
+				<div class="audio-info">
+					<span id="artistinfo" class="artist"></span> - <span id="title"></span>
+				</div>
+
+				<input id="volume" type="range" min="0" max="10" value="5">
+				<div id="audio-buttons" data-role="controlgroup" data-type="horizontal">
+					<button id="play" class=" ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">Play</button>
+					<button id="pause" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">pause</button>
+					<button id="stop" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">stop</button>
+					<button id="next" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">next</button>
+					<button id="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">reverse</button>
+					<span id="duration"></span>
+				</div>
+
+				<div class="clearfix"> </div>
+
+				<div id="tracker">
+					<div id="progressbar">
+						<span id="progress"></span>
+
+					</div>
+
+				</div>
+
+				<br>
+				<ul id="playlist">
+
+				</ul>
+
+				<div class="clearfix"></div>
+
+
+			</div>
+			<div data-role="footer">
+
+			</div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/music.js" type="text/javascript">
+	</script>
+	<script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>
