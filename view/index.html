@@ -11,11 +11,14 @@
 </head>
 
 <body>
-	<div data-role="page" class="ui-page ui-page-theme-b">
-		<div class="container">
+	<div id="main" data-role="page" class="ui-page ui-page-theme-b">
 
+		<div data-role="panel" id="mypanel">
+		</div><!-- /panel -->
 
 			<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+
+					<a href="#playlist">Playlist</a>
 
 				<h1 class="ui-title" role="heading" aria-level="1">Music Player</h1>
 			</div>
@@ -23,44 +26,72 @@
 				<div class="ui-grid-solo" id="image-container">
 					<img class="ui-block-a" id="album-cover" alt="album cover">
 				</div>
+
+				<!-- Artist name and the SongTitle -->
 				<div class="audio-info">
 					<span id="artistinfo" class="artist"></span> - <span id="title"></span>
 				</div>
 
-				<input id="volume" type="range" min="0" max="10" value="5">
+				<input id="volume" type="range" min="0" max="100" value="50">
 				<div id="audio-buttons" data-role="controlgroup" data-type="horizontal">
 					<button id="play" class=" ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">Play</button>
 					<button id="pause" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">pause</button>
 					<button id="stop" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">stop</button>
 					<button id="next" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">next</button>
 					<button id="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon ">reverse</button>
-					<span id="duration"></span>
-				</div>
-
-				<div class="clearfix"> </div>
-
-				<div id="tracker">
-					<div id="progressbar">
-						<span id="progress"></span>
-
-					</div>
-
-				</div>
-
-				<br>
-				<ul id="playlist">
-
-				</ul>
-
-				<div class="clearfix"></div>
-
 
 			</div>
-			<div data-role="footer">
 
-			</div>
-		</div>
+
+
+
+			<div data-role="footer">.....	</div>
+
+
+
+
+			<!-- additional pages -->
+
+			<!-- Start of second page -->
+<div data-role="page" id="playlist">
+
+	<div data-role="header">
+		<h1>Albums</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<ul id="ul-playlist">
+
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
 	</div>
+</div>
+
+
+
+<!-- Start of second page -->
+<div data-role="page" id="playlist" class="ui-page ui-page-theme-b">
+
+<div data-role="header">
+<h1>Albums</h1>
+</div><!-- /header -->
+
+<div role="main" class="ui-content">
+<ul id="ulplaylist">
+
+</ul>
+</div><!-- /content -->
+
+<div data-role="footer">
+<h4>Page Footer</h4>
+</div><!-- /footer -->
+</div><!-- /page -->
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

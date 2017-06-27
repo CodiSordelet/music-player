@@ -3,3 +3,8 @@ ui-btn-icon-notext:after  {
   background-image: url("play-button.svg") !important;
 
 }
+
+
+ul {
+  list-style-type: none;
+}
